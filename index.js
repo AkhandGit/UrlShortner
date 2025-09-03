@@ -10,7 +10,7 @@ app.use("/url", urlRoute);
 
 connectToMongoDB('mongodb://localhost:27017/short-url').then(()=>{
     console.log("Connected to MongoDB");
-}
+}),
 
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
